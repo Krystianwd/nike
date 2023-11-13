@@ -4,9 +4,9 @@ import DeliveryMonit from "./components/DeliveryMonit";
 import FirstContentComponent from "./components/FirstContentComponent";
 import Lead from "./components/Lead";
 import Navbar from "./components/Navbar";
-import { Player } from "video-react";
 import PopularStuff from "./components/PopularStuff";
 import DiscoverMore from "./components/DiscoverMore";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
         <PhotoSwiper></PhotoSwiper>
         <PopularStuff></PopularStuff>
         <DiscoverMore></DiscoverMore>
+        <Footer></Footer>
       </main>
     </>
   );

@@ -116,3 +116,20 @@ export const Wyprzedaz = {
     "Tenis",
   ],
 };
+export const FooterData = {
+  "KARTY UPOMINKOWE": [
+    "ZNAJDŹ SKLEP",
+    "NIKE JOURNAL",
+    "ZOSTAŃ CZŁONKIEM",
+    "RABAT DLA STUDENTÓW",
+    "PRZEŚLIJ OPINIĘ",
+  ],
+  "UZYSKAJ POMOC": [
+    "Status zamówienia",
+    "Zwroty",
+    "Opcje płatności",
+    "Skontaktuj się z nami",
+  ],
+  "O NIKE": ["Aktualności", "Praca", "Inwestorzy", "Ochrona środowiska"],
+  "DOŁĄCZ DO NAS": ["Nike App", "Nike Run Club", "SNKRS"],
+};
