@@ -133,3 +133,64 @@ export const FooterData = {
   "O NIKE": ["Aktualności", "Praca", "Inwestorzy", "Ochrona środowiska"],
   "DOŁĄCZ DO NAS": ["Nike App", "Nike Run Club", "SNKRS"],
 };
+
+export const mainPhotoshoots = {
+  StreetWear: [
+    "nikePhotoshootStreetwear11.jpg",
+    "nikePhotoshootStreetwear12.jpg",
+    "nikePhotoshootStreetwear13.jpg",
+  ],
+  Skate: [
+    "nikePhotoshootSkate2.jpg",
+    "nikePhotoshootSkate3.jpg",
+    "nikePhotoshootSkate4.png",
+  ],
+  Vintage: [
+    "nikePhotoshootVintage1.jpg",
+    "nikePhotoshootVintage2.png",
+    "nikePhotoshootVintage3.jpg",
+  ],
+  Winter: [
+    "nikePhotoshootWinter1.jpg",
+    "nikePhotoshootWinter2.jpg",
+    "nikePhotoshootWinter3.jpg",
+  ],
+};
+export const PopularStuffPhotoshoots = [
+  {
+    path: "/nikeShoe2.jpg",
+    name: "NIKE AIR FORCE LUXE 1",
+    type: "Buty męskie",
+    price: "669,99zł",
+  },
+  {
+    path: "nikeShoe4.png",
+    name: "NIKE AIR FORCE LUXE 1",
+    type: "Buty męskie",
+    price: "669,99zł",
+  },
+  {
+    path: "nikeShoe5.png",
+    name: "NIKE DUNK LOW",
+    type: "Buty damskie",
+    price: "579,99zł",
+  },
+  {
+    path: "nikeShoe6.png",
+    name: "MĘSKIE NIKE AIR MAX PULSE",
+    type: "Buty męskie",
+    price: "759,99 zł",
+  },
+  {
+    path: "nikeShoe7.jpg",
+    name: "NIKE AIR MAX 1",
+    type: "Buty męskie",
+    price: "729,99 zł",
+  },
+  {
+    path: "nikeShoe8.png",
+    name: "NIKE AIR MAX PULSE",
+    type: "Buty męskie",
+    price: "549,94 zł",
+  },
+];

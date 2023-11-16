@@ -1,10 +1,28 @@
 import React from "react";
 import PopularStuffSwiper from "./PopularStuffSwiper";
-
 const PopularStuff = () => {
   return (
     <div className="popularStuff">
-      <p>Popularne w tym tygodniu</p>
+      <div className="popularStuffUpperContainer">
+        <p>Popularne w tym tygodniu</p>
+        <div className="arrowsDiv">
+          <img
+            className="arrows"
+            id="prev"
+            src="leftArrow.svg"
+            width="60px"
+            height="60px"
+          ></img>
+          <img
+            className="arrows"
+            id="next"
+            src="rightArrow.svg"
+            width="60px"
+            height="60px"
+          ></img>
+        </div>
+      </div>
+
       <PopularStuffSwiper></PopularStuffSwiper>
     </div>
   );

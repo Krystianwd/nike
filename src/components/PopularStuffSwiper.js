@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { PopularStuffPhotoshoots } from "../data/data";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -15,72 +15,47 @@ const PopularStuffSwiper = () => {
   return (
     <>
       <Swiper
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+          },
+          900: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+          // when window width is >= 768px
+        }}
         centeredSlides={true}
-        slidesPerView={"3"}
-        navigation={true}
+        slidesPerView={"1"}
         loop={true}
         modules={[EffectCoverflow, Navigation]}
-        hashNavigation={{
-          watchState: true,
+        navigation={{
+          nextEl: "#next",
+          prevEl: "#prev",
         }}
         className="mySwiper"
+        id="popularStuffSwiper"
+        allowTouchMove={false}
       >
-        <SwiperSlide>
-          <div className="popularStuffCaption">
-            <img src="nikeShoe2.jpg"></img>
-            <p>NIKE AIR FORCE LUXE 1</p>
-            <br />
-            <p>Buty męskie</p> <br />
-            <p>669,99zł</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="popularStuffCaption">
-            <img src="nikeShoe4.png"></img>
-            <p>NIKE AIR FORCE LUXE 1</p>
-            <br />
-            <p>Buty męskie</p> <br />
-            <p>669,99zł</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="popularStuffCaption">
-            <img src="nikeShoe5.png"></img>
-            <p>NIKE DUNK LOW</p>
-            <br />
-            <p>Buty damskie</p> <br />
-            <p>579,99zł</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="popularStuffCaption">
-            <img src="nikeShoe6.png"></img>
-            <p>MĘSKIE NIKE AIR MAX PULSE</p>
-            <br />
-            <p>Buty męskie</p> <br />
-            <p>759,99 zł</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="popularStuffCaption">
-            <img src="nikeShoe7.jpg"></img>
-            <p>NIKE AIR MAX 1</p>
-            <br />
-            <p>Buty męskie</p> <br />
-            <p>729,99 zł</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="popularStuffCaption">
-            <img src="nikeShoe8.png"></img>
-            <p>NIKE AIR MAX PULSE</p>
-            <br />
-            <p>Buty męskie</p> <br />
-            <p>549,94 zł</p>
-          </div>
-        </SwiperSlide>
+        {PopularStuffPhotoshoots.map((arrayItem) => {
+          return (
+            <SwiperSlide>
+              <div className="popularStuffCaption">
+                <img src={arrayItem.path}></img>
+                <p>{arrayItem.name}</p>
+                <br />
+                <p>{arrayItem.type}</p> <br />
+                <p>{arrayItem.price}</p>
+              </div>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </>
   );
+  {
+  }
 };
 export default PopularStuffSwiper;

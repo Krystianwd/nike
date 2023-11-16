@@ -27,19 +27,23 @@ const Footer = () => {
           <img src="iconYoutube.svg" width="50px" height="50px"></img>
         </div>
       </div>
-      <div className="guideContainer">
-        <a>Przewodniki</a>
-        <a>Warunki korzystania</a>
-        <a>Regulamin sprzedaży</a>
-        <a>Dane firmy</a>
-      </div>
-      <div className="cookieContainer">
-        <a>Polityka prywatności i zasady dotyczące plików cookie</a>{" "}
-        <a>Ustawienia dotyczące plików cookie</a>
+      <div className="middleFooterContainer">
+        <div className="guideContainer">
+          <a>Przewodniki</a>
+          <a>Warunki korzystania</a>
+          <a>Regulamin sprzedaży</a>
+          <a>Dane firmy</a>
+        </div>
       </div>
       <div className="bottomFooterContainer">
-        <p className="location">📌 Polska</p>
-        <p>© 2023 Dębiec Kąpany, Inc. Utworzone w celach pokazowych</p>
+        <div className="cookieContainer">
+          <a>Polityka prywatności i zasady dotyczące plików cookie</a>
+          <a>Ustawienia dotyczące plików cookie</a>
+        </div>
+        <div className="locationContainer">
+          <p className="location">📌 Polska</p>
+          <p>© 2023 Dębiec Kąpany, Inc. Utworzone w celach pokazowych</p>
+        </div>
       </div>
     </div>
   );

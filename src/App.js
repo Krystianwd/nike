@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import PopularStuff from "./components/PopularStuff";
 import DiscoverMore from "./components/DiscoverMore";
 import Footer from "./components/Footer";
+import FrontPageVideo from "./components/FrontPageVideo";
 
 function App() {
   return (
@@ -16,14 +17,7 @@ function App() {
         <Navbar />
         <DeliveryMonit />
         <FirstContentComponent />
-        <video
-          style={{ marginTop: "30px", height: "50%", width: "100%" }}
-          autoPlay
-          loop
-          muted
-        >
-          <source src="nike_-_members_of_summer (720p).mp4" type="video/mp4" />
-        </video>
+        <FrontPageVideo></FrontPageVideo>
         <PhotoSwiper></PhotoSwiper>
         <PopularStuff></PopularStuff>
         <DiscoverMore></DiscoverMore>
