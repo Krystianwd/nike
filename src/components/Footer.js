@@ -7,12 +7,12 @@ const Footer = () => {
         <div className="footerColumns">
           {Object.entries(FooterData).map(([key, array]) => (
             <div className="footerColumn">
-              <a key={key} href="">
+              <a key={key} href="/.">
                 {key}
               </a>
               <div className="footerColumnSubContainer">
                 {array.map((value) => (
-                  <a key={value} href="">
+                  <a key={value} href="/.">
                     {value}
                   </a>
                 ))}
@@ -21,24 +21,44 @@ const Footer = () => {
           ))}
         </div>
         <div className="socialsContainer">
-          <img src="iconFacebook.svg" width="50px" height="50px"></img>
-          <img src="iconTwitter.svg" width="50px" height="50px"></img>
-          <img src="iconInstagram.svg" width="50px" height="50px"></img>
-          <img src="iconYoutube.svg" width="50px" height="50px"></img>
+          <img
+            src="iconFacebook.svg"
+            width="50px"
+            height="50px"
+            alt="iconFacebook"
+          ></img>
+          <img
+            src="iconTwitter.svg"
+            width="50px"
+            height="50px"
+            alt="iconTwitter"
+          ></img>
+          <img
+            src="iconInstagram.svg"
+            width="50px"
+            height="50px"
+            alt="iconInstagram"
+          ></img>
+          <img
+            src="iconYoutube.svg"
+            width="50px"
+            height="50px"
+            alt="iconYoutube"
+          ></img>
         </div>
       </div>
       <div className="middleFooterContainer">
         <div className="guideContainer">
-          <a>Przewodniki</a>
-          <a>Warunki korzystania</a>
-          <a>Regulamin sprzedaży</a>
-          <a>Dane firmy</a>
+          <a href="/.">Przewodniki</a>
+          <a href="/.">Warunki korzystania</a>
+          <a href="/.">Regulamin sprzedaży</a>
+          <a href="/.">Dane firmy</a>
         </div>
       </div>
       <div className="bottomFooterContainer">
         <div className="cookieContainer">
-          <a>Polityka prywatności i zasady dotyczące plików cookie</a>
-          <a>Ustawienia dotyczące plików cookie</a>
+          <a href="/.">Polityka prywatności i zasady dotyczące plików cookie</a>
+          <a href="/.">Ustawienia dotyczące plików cookie</a>
         </div>
         <div className="locationContainer">
           <p className="location">📌 Polska</p>

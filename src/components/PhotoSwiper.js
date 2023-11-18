@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { mainPhotoshoots } from "../data/data";
@@ -11,7 +11,7 @@ import "../SwiperStyles.css";
 
 // import required modules
 
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import { EffectCoverflow } from "swiper/modules";
 
 const PhotoSwiper = () => {
   const [caption, setCaption] = useState("Steetwear");
@@ -40,6 +40,7 @@ const PhotoSwiper = () => {
           array.map((value) => (
             <SwiperSlide>
               <img
+                alt={value}
                 id="mainPhotoshoot"
                 src={value}
                 width="1024px"

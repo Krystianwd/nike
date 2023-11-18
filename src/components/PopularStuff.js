@@ -12,8 +12,10 @@ const PopularStuff = () => {
             src="leftArrow.svg"
             width="60px"
             height="60px"
+            alt="leftArrow"
           ></img>
           <img
+            alt="rightArrow"
             className="arrows"
             id="next"
             src="rightArrow.svg"

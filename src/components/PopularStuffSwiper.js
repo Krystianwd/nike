@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { PopularStuffPhotoshoots } from "../data/data";
@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "../SwiperStyles.css";
 
 // import required modules
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import { EffectCoverflow, Navigation } from "swiper/modules";
 const PopularStuffSwiper = () => {
   return (
     <>
@@ -43,7 +43,7 @@ const PopularStuffSwiper = () => {
           return (
             <SwiperSlide>
               <div className="popularStuffCaption">
-                <img src={arrayItem.path}></img>
+                <img src={arrayItem.path} alt={arrayItem.path}></img>
                 <p>{arrayItem.name}</p>
                 <br />
                 <p>{arrayItem.type}</p> <br />
@@ -55,7 +55,5 @@ const PopularStuffSwiper = () => {
       </Swiper>
     </>
   );
-  {
-  }
 };
 export default PopularStuffSwiper;
