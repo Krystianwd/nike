@@ -4,7 +4,11 @@ const DiscoverMore = () => {
   return (
     <div className="DiscoverMoreContainer">
       <div className="DiscoverMoreItemContainer">
-        <img className="DiscoverMoreImage" src="nikePhotoshoot8.jpg"></img>
+        <img
+          className="DiscoverMoreImage"
+          src="nikePhotoshoot8.jpg"
+          alt="nikePhotoshoot8"
+        ></img>
         <div className="DiscoverMoreButtonContainer">
           <div className="DiscoverMoreGenderButtonContainer">
             <button className="button-18">Mężczyźni</button>
@@ -15,7 +19,11 @@ const DiscoverMore = () => {
         </div>
       </div>
       <div className="DiscoverMoreItemContainer">
-        <img className="DiscoverMoreImage" src="nikePhotoshoot7.jpg"></img>
+        <img
+          className="DiscoverMoreImage"
+          src="nikePhotoshoot7.jpg"
+          alt="nikePhotoshoot7"
+        ></img>
         <div className="DiscoverMoreButtonContainer">
           <div className="DiscoverMoreGenderButtonContainer">
             <button className="button-18">Kobiety</button>
@@ -26,7 +34,11 @@ const DiscoverMore = () => {
         </div>
       </div>
       <div className="DiscoverMoreItemContainer">
-        <img className="DiscoverMoreImage" src="NikePhotoshoot5.jpg"></img>
+        <img
+          className="DiscoverMoreImage"
+          src="NikePhotoshoot5.jpg"
+          alt="NikePhotoshoot5"
+        ></img>
         <div className="DiscoverMoreButtonContainer">
           <div className="DiscoverMoreGenderButtonContainer">
             <button className="button-18">Dzieci</button>
