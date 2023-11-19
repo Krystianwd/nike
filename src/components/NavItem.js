@@ -2,21 +2,18 @@ import React from "react";
 
 const NavItem = ({ name, data }) => {
   return (
-    <div className="NavItem-Container">
-      <div className="NavItemBorder-Container">
-        {/* <p>{name}</p> */}
+    <div className="NavTable-Container">
+      <div className="NavItem-Container">
         {Object.entries(data).map(([key, array]) => (
-          <div className="NavItemContent-Container">
-            <a key={key} href="/.">
+          <div className="NavItemColumn">
+            <div className="NavTableColItem" id="NavItemKey" key={key}>
               {key}
-            </a>
-            <div className="NavItemContent-SubContainer">
-              {array.map((value) => (
-                <a key={value} href="/.">
-                  {value}
-                </a>
-              ))}
             </div>
+            {array.map((value) => (
+              <div className="NavTableColItem" id="NavItemValue" key={value}>
+                {value}
+              </div>
+            ))}
           </div>
         ))}
       </div>

@@ -24,7 +24,6 @@
 }
 .Navbar-Container {
   padding: 5px;
-  overflow: hidden;
   width: 100%;
   background-color: white;
 }
@@ -41,77 +40,65 @@
 .Navbar-Href-Container p {
   padding: 10px;
 }
-.NavItem-Container {
-  width: calc(100vw - 12px);
-
-  position: absolute;
+.NavTable-Container {
   z-index: 2;
-  padding: 20px;
-  overflow: hidden;
-  background-color: white;
+  position: absolute;
+  display: flex;
   margin-left: -10px;
 }
+.NavItem-Container {
+  width: calc(100vw - 12px);
+  display: flex;
+  flex-flow: row;
+  background-color: white;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 30px;
+}
+.NavItemColumn {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  justify-content: flex-start;
+}
+#NavItemKey {
+  font-weight: bold;
+}
+.NavTableColItem {
+  display: flex;
+  font-size: 14px;
+  padding: 10px;
+}
+.NavTableColItem:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  /*   box-shadow: 0px 1px 4px rgba(0, 0, 0, .08); */
+}
+
 .NavItemBorder-Container {
   width: 100%;
   height: 80%;
   border-bottom: 2px outset black;
-  overflow: hidden;
 }
-.NavItem-Container:after {
-  display: table;
 
-  clear: both;
-}
-.NavItemContent-Container {
-  float: left;
-  width: 50%;
-  /* height: 260px;
-  width: 245px; */
-  /* position: relative; */
+.NavItemContent-Container a {
   font-weight: bold;
 }
-.NavItemContent-Container a {
+
+.NavItemContent-Container a,
+.NavItemContent-SubContainer a {
+  padding-right: 10px;
+  padding-bottom: 5px;
   font-size: 20px;
-  margin-left: 100px;
 }
 
 .NavItemContent-SubContainer a {
   font-size: 15px;
-  display: block;
   font-weight: normal;
-  padding: 10px;
 }
-
-/* .NavItemContent-Container a {
-  width: 100%;
-  font-weight: bold;
-  padding: 10px;
-  font-size: 20px;
-  margin-left: -10px; */
-/* .NavItem-Container {
-  margin-left: -10px;
-  padding: 20px;
-  z-index: 2;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  width: 100%;
-  border-bottom: 2px outset black;
-} */
-/* .NavItemContent-SubContainer a {
-  font-size: 15px;
-  display: block;
-  font-weight: normal;
-  padding: 10px;
-  width: 100%;
-  margin: 0;
-} */
-
 .DeliveryMonit-Container {
   z-index: 0;
   padding: 10px;
-  /* position: relative; */
   background-color: rgba(211, 211, 211, 0.719);
 }
 .FirstContentComponent-Container {
@@ -167,8 +154,6 @@
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-.DiscoverMoreGenderButtonContainer {
 }
 a,
 p,
@@ -349,6 +334,15 @@ p {
   margin: 10px;
 }
 @media screen and (max-width: 1200px) {
+  .NavItemContent-Container a,
+  .NavItemContent-SubContainer a {
+    font-size: 15px;
+    padding: 10px;
+    /* margin-left: 100px; */
+  }
+  .NavItem-Container {
+    /* text-align: center; */
+  }
   .DiscoverMoreItemContainer,
   .footerColumn {
     width: 50%;

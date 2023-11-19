@@ -9,8 +9,8 @@ import {
 } from "../data/data";
 import { useState } from "react";
 const Navbar = () => {
-  const [data, setData] = useState([]);
-  const [isHovering, setIsHovering] = useState(false);
+  const [data, setData] = useState(Wyprzedaz);
+  const [isHovering, setIsHovering] = useState(true);
   const handleMouseOver = () => {
     setIsHovering(true);
   };
