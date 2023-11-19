@@ -41,7 +41,7 @@ const PhotoSwiper = () => {
             <SwiperSlide>
               <img
                 alt={value}
-                id="mainPhotoshoot"
+                className="mainPhotoshoot"
                 src={value}
                 width="1024px"
                 height="768px"

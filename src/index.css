@@ -51,9 +51,8 @@
   display: flex;
   flex-flow: row;
   background-color: white;
-  margin: 0 auto;
   justify-content: center;
-  padding: 30px;
+  padding-bottom: 30px;
 }
 .NavItemColumn {
   display: flex;
@@ -69,40 +68,21 @@
   font-size: 14px;
   padding: 10px;
 }
+.Navbar-Href-Container p:hover,
 .NavTableColItem:hover {
   cursor: pointer;
   background-color: #f0f0f0;
   /*   box-shadow: 0px 1px 4px rgba(0, 0, 0, .08); */
 }
-
 .NavItemBorder-Container {
   width: 100%;
   height: 80%;
-  border-bottom: 2px outset black;
-}
-
-.NavItemContent-Container a {
-  font-weight: bold;
-}
-
-.NavItemContent-Container a,
-.NavItemContent-SubContainer a {
-  padding-right: 10px;
-  padding-bottom: 5px;
-  font-size: 20px;
-}
-
-.NavItemContent-SubContainer a {
-  font-size: 15px;
-  font-weight: normal;
+  border-bottom: 3px outset black;
 }
 .DeliveryMonit-Container {
   z-index: 0;
   padding: 10px;
   background-color: rgba(211, 211, 211, 0.719);
-}
-.FirstContentComponent-Container {
-  /* position: relative; */
 }
 .DeliveryMonit-Container p {
   display: flex;
@@ -297,8 +277,11 @@ img {
   min-height: 100%;
 }
 
-#mainPhotoshoot {
+.mainPhotoshoot {
   padding: 5px;
+}
+.mainPhotoshoot:hover {
+  opacity: 0.7;
 }
 .mainPhotoshootSwiper {
   margin-top: 30px;
