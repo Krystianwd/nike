@@ -42,7 +42,7 @@ const Navbar = () => {
           }}
           onMouseOut={handleMouseOut}
         >
-          Mężczyźni
+          Mężczyźnii
         </p>
         <p
           onMouseOver={() => {
